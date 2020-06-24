@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <classPathEntry location="C:\Users\PV-1\.m2\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>
+  <context id="context1">
+  	<commentGenerator>
+  		<property name="suppressTypeWarnings" value="false"/>
+  		<property name="suppressAllComments" value="true"/>
+  		<property name="suppressDate" value="true" />
+  	</commentGenerator>
+    <jdbcConnection connectionURL="jdbc:oracle:thin:@172.16.0.8:1521:ora11gvlt"
+    driverClass="oracle.jdbc.driver.OracleDriver"
+    userId="hymicroservice" password="6YaTf9SJJIl9A9dX" />
+    <javaModelGenerator targetPackage="com.hymake.pc.modules.employee.entity" targetProject="yiqing\src\main\java" />
+    <sqlMapGenerator targetPackage="com.hymake.pc.modules.employee.mapper" targetProject="yiqing\src\main\java" />
+    <javaClientGenerator targetPackage="com.hymake.pc.modules.employee.mapper" targetProject="yiqing\src\main\java" type="XMLMAPPER" >
+      <property name="enableSubPackages" value="true"/>
+    </javaClientGenerator>
+      <!--<table tableName="wx_boat" domainObjectName="">-->
+      <!--<columnRenamingRule searchString="^ht" replaceString=""/>-->
+      <!--</table>-->
+      <table tableName="HT_FY_EMPLOYEE" domainObjectName="">
+      <columnRenamingRule searchString="^ht" replaceString=""/>
+      </table>
+      <table tableName="HT_FY_REPORTED" domainObjectName="">
+      <columnRenamingRule searchString="^ht" replaceString=""/>
+      </table>
+      <!--<table tableName="wx_user" domainObjectName="">-->
+          <!--<columnRenamingRule searchString="^ht" replaceString=""/>-->
+      <!--</table>-->
+
+  </context>
+</generatorConfiguration>

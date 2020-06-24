@@ -1,0 +1,9 @@
+environment: pro
+spring:
+  datasource:
+    username: hymicroservice
+    password: 6YaTf9SJJIl9A9dX
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@172.16.0.8:1521:ora11gvlt
+logging:
+  config: classpath:logback-config.xml

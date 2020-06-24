@@ -1,0 +1,10 @@
+server:
+  port: 8023
+spring:
+  profiles:
+    active: dev
+  datasource:
+    username: wxzj
+    password: wxzj
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.168.212:1521:hkyfcs
